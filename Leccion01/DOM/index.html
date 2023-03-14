@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="entrar()">
+    <h1 id="cabecero">Bienvenidos a este sitio web</h1>
+    <p id="parrafo">Mucha suerte!!</p>
+    <p id="parrafo2">Esto es una prueba de párrafo</p>
+
+    <h2 class="subtitulo">Trikitakatelas</h2>
+    <h2 class="subtitulo">Mmgvazo mmgvo</h2>
+
+    <h3 class="titulo_pequeno">Prueba 1</h3>
+    <h3 class="titulo_pequeno">Prueba 2 </h3>
+
+
+
+
+    <!--modificar formulario con JavaScript-->
+    <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br>
+        Apellido: <input type="text" name="apellido" value="Perez">
+        <br>
+
+
+    </form>
+    <div id="valores"></div>
+    <button onclick='mostrarValores()'>Mostrar formulario</button>
+    <h2 id="modificar-titulo">Esta es una prueba</h2>
+    <button onclick="mostrar()">Mostrar subtitulo cambiado</button>
+    <img id="imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="" style="display: block;">
+    <button onclick="cambiarImagen()" style="display: block;">Click para cambiar la imagen</button>
+    <button onclick="cambiarColor()">Cambiar color del h3</button>
+    <h3 id="pruebita">Otra pruebita</h3>
+
+    <!--definir los eventos de esta manera, no es una buena práctica-->
+    <!-- <h3 onclick="this.innerHTML = 'Nuevo título con evento'">Evento html</h3> -->
+    <h3 onclick="cambiarTexto(this)">Cambiar texto con evento HTML</h3>
+    <h4 id="nombre">Steven Trejos</h4>
+    <div id="mostrar"></div>
+    <div id="mostrarNombre"></div>
+
+    Nombre: <input type="text" name=""  id="name" onchange="convertir(this)">
+
+    <h1 id="eventoOver" onmouseover="cambiarFuente()" onmouseout="cambiarColorTitulo()">Título con evento onmouseover</h1>
+    <h2 id="mouseup" onmousedown="darClick()" onmouseup="soltarClick()">Dar click y soltarlo</h2>
+    <br>
+    Campo: <input type="text" name="" id="campo"  onfocus="cambiarFondo()" onblur="retornarFondo()">
+
+    Email: <input type="text" id="email">
+    Telefono: <input type="text" id="telefono">
+
+    
+    <form action="" id="forma">
+        Dirección: <input type="text" id="direccion">
+        Sexo: <input type="text" id="sexo">
+        
+    </form>
+
+    <script src="dom1.js"></script>
+</body>
+</html>
